@@ -53,6 +53,33 @@ The project is implemented in the Jupyter Notebook
 5.  To recover the document, select the generated image and use the
     extract option. Enter the same password if encryption was enabled.
 
+## Visuals
+
+### GUI Interface
+
+The application interface for embedding and extracting legal documents.
+
+<p align="center">
+  <img width="671" alt="GUI Interface" src="https://github.com/user-attachments/assets/97cf7b16-8017-43ad-b6a2-346607a6e548" />
+  <img width="671" alt="GUI Interface in Progress" src="https://github.com/user-attachments/assets/3c1bf0e7-d98a-4f1f-b9b0-57dd87b1740c" />
+</p>
+
+### Original Image vs. Stego-Image
+
+A side-by-side comparison of the original image and the stego-image containing the hidden document. The differences are virtually imperceptible to the human eye.
+
+<p align="center">
+  <img width="100%" alt="Original Image vs. Stego-Image Comparison" src="https://github.com/user-attachments/assets/09ac337e-8516-4e4b-86e6-5d25b1546233" />
+</p>
+
+### Image Difference Analysis
+
+When the original and stego-images are overlaid, the differences remain difficult to notice. Applying a pixel-wise hue-difference threshold makes these differences more visible.
+
+<p align="center">
+  <img width="100%" alt="Overlay and Pixel-wise Hue Difference" src="https://github.com/user-attachments/assets/78b33f20-9307-4370-96b4-0cee1331cd5b" />
+</p>
+
 ## Notes
 
 -   Use the generated **PNG** image without editing, resizing, or
@@ -66,6 +93,8 @@ The project is implemented in the Jupyter Notebook
 -   This is an academic/demo project. Test it with non-sensitive sample
     documents before relying on it for real legal or confidential
     material.
-
+-   In a real world scenario, it is ideal to use a cover image that is
+    taken locally by the user. So as to avoid finding the original image
+    available online which can compromise the secrecy of the stego-image.
 
 
